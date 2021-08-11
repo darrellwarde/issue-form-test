@@ -8,13 +8,25 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Can you please describe the bug?
+    validations:
+      required: true
+  - type: textarea
     id: type-definitions
     attributes:
       label: Type Definitions
       description: Can you please provide your type definitions when you encountered this bug?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
       render: graphql
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Can you please provide the steps required to reproduce this bug?
     validations:
       required: true
   - type: dropdown
