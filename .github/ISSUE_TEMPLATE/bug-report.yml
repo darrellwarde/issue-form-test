@@ -22,7 +22,7 @@ body:
     id: steps-to-reproduce
     attributes:
       label: Steps to Reproduce
-      description: Can you please provide the steps required to reproduce this bug? Please use code blocks - a template is already provided.
+      description: Can you please provide the steps required to reproduce this bug? Please use code blocks - an example is provided.
       value:  |
         1. Add some test data with the following Mutation:
         
