@@ -23,6 +23,24 @@ body:
     attributes:
       label: Steps to Reproduce
       description: Can you please provide the steps required to reproduce this bug?
+      value:  |
+        1. Add some test data with the following Mutation:
+        ```graphql
+        mutation {
+          someMutation {
+            ...someFields
+          }
+        }
+        ```
+        2. Query the data using the following Query:
+        ```graphql
+        query {
+          someQuery {
+            ...someFields
+          }
+        }
+        ```
+        3. See the error.
     validations:
       required: true
   - type: dropdown
