@@ -1,0 +1,36 @@
+name: Bug Report Form
+description: File a bug report
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: type-definitions
+    attributes:
+      label: Type Definitions
+      description: Can you please provide your type definitions when you encountered this bug?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+      render: graphql
+    validations:
+      required: true
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: What product were you using when you encountered this bug?
+      options:
+        - Neo4j GraphQL Library
+        - OGM
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of the product were you using when you encountered this bug?
+    validations:
+      required: true
